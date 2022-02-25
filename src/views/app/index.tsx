@@ -1,5 +1,11 @@
+import TestReact from '@/components/TestReact'
+
 function App() {
-  return <div className="App">11111111111</div>
+  return (
+    <div id="App" style={{ fontSize: '16px' }}>
+      <TestReact />
+    </div>
+  )
 }
 
 export default App
