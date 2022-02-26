@@ -10,7 +10,7 @@ module.exports = {
     configure: {
       /* Any webpack configuration options: https://webpack.js.org/configuration */
       output: {
-        publicPath: env === 'production' ? '/bamboo/' : '/'
+        publicPath: env === 'production' ? '/' : '/'
       }
     }
   },
