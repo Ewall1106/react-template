@@ -1,9 +1,9 @@
-import TestReact from '@/components/TestReact'
+import React from 'react'
 
 function App() {
   return (
     <div id="App" style={{ fontSize: '16px' }}>
-      <TestReact />
+      hello world
     </div>
   )
 }
