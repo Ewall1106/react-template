@@ -5,13 +5,11 @@ export const userApi = [
     response: config => {
       return {
         code: 200,
-        data: {
-          name: 'DanielXiong',
-          avatar:
-            'https://raw.githubusercontent.com/Ewall1106/panda-vue-template/master/src/assets/logo.png',
-          id: '00001'
-        },
         status: true,
+        data: {
+          uid: '123456',
+          username: 'react-template'
+        },
         message: 'success'
       }
     }
