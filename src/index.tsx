@@ -7,10 +7,10 @@ import About from './views/about'
 
 import './styles'
 
-// if (process.env.NODE_ENV === 'development') {
-//   const { mockXHR } = require('../mock')
-//   mockXHR()
-// }
+if (process.env.PROJECT_ENV === 'mock') {
+  const { mockXHR } = require('../mock')
+  mockXHR()
+}
 
 ReactDOM.render(
   <HashRouter>

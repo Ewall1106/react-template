@@ -1,7 +1,8 @@
+const { DefinePlugin } = require('webpack')
 const CracoAlias = require('craco-alias')
 const CracoLessPlugin = require('craco-less')
 
-const env = process.env.NODE_ENV
+const env = process.env.PROJECT_ENV
 const config = require('./src/utils/config')
 const { mockURL } = config[env]
 
@@ -12,7 +13,12 @@ module.exports = {
       output: {
         publicPath: env === 'production' ? '/' : '/'
       }
-    }
+    },
+    plugins: [
+      new DefinePlugin({
+        'process.env.PROJECT_ENV': JSON.stringify(env)
+      })
+    ]
   },
   devServer: {
     proxy: {

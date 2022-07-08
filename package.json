@@ -3,16 +3,16 @@
   "version": "1.0.1",
   "author": "DanielXiong<ewall1106@gmail.com>",
   "scripts": {
-    "dev": "craco start",
-    "start": "craco start",
+    "dev": "cross-env PROJECT_ENV=local craco start",
+    "mock": "cross-env PROJECT_ENV=mock craco start",
+    "start": "cross-env PROJECT_ENV=development craco start",
     "build": "craco build",
-    "test": "craco test",
-    "eject": "craco eject",
     "compress": "node ./compress.js"
   },
   "dependencies": {
     "ahooks": "^3.0.8",
     "axios": "^0.24.0",
+    "cross-env": "^7.0.3",
     "lodash": "^4.17.21",
     "mobx": "^6.3.8",
     "mobx-react": "^7.2.1",

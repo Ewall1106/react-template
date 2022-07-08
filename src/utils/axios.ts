@@ -1,7 +1,8 @@
 import axios, { AxiosInstance } from 'axios'
 
 const config = require('./config')
-const baseURL = config[process.env.NODE_ENV].baseURL
+const isProd = process.env.NODE_ENV === 'production'
+const baseURL = isProd ? config['production'].baseURL : config[process.env.PROJECT_ENV].baseURL
 
 const service: AxiosInstance = axios.create({
   baseURL,
