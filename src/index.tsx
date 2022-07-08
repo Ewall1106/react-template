@@ -1,6 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './views/app'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+
+import Home from './views/home'
+import About from './views/about'
 
 import './styles'
 
@@ -10,8 +13,12 @@ import './styles'
 // }
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <HashRouter>
+    <Routes>
+      <Route path="/" element={<Home />}></Route>
+      <Route path="/about" element={<About />}></Route>
+      <Route path="*" element={<Home />}></Route>
+    </Routes>
+  </HashRouter>,
   document.getElementById('root')
 )
