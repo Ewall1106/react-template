@@ -1,12 +1,11 @@
 import Mock from 'mockjs'
 
 import user from './user'
-import components from './components'
 
 const config = require('../src/utils/config')
 const baseURL = config[process.env.NODE_ENV].baseURL
 
-const mocks = [...user, ...components]
+const mocks = [...user]
 
 // https://github.com/nuysoft/Mock/wiki
 export function mockXHR() {
