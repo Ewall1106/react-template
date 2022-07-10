@@ -12,7 +12,7 @@ module.exports = {
     mockURL: 'xxx.xxx.xxx'
   },
   production: {
-    baseURL: '/dev-api',
+    baseURL: 'xxx.xxx.xxx',
     mockURL: 'xxx.xxx.xxx'
   }
 }
