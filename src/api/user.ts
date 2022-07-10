@@ -14,3 +14,7 @@ export function getUserInfo() {
     method: 'get'
   })
 }
+
+export default {
+  getUserInfo
+}
