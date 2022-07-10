@@ -6,7 +6,7 @@
     "dev": "cross-env PROJECT_ENV=local craco start",
     "mock": "cross-env PROJECT_ENV=mock craco start",
     "start": "cross-env PROJECT_ENV=development craco start",
-    "build": "craco build",
+    "build": "cross-env PROJECT_ENV=production craco build",
     "compress": "node ./compress.js"
   },
   "dependencies": {
