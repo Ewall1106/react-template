@@ -3,7 +3,7 @@ const CracoAlias = require('craco-alias')
 const CracoLessPlugin = require('craco-less')
 
 const env = process.env.PROJECT_ENV
-const config = require('./src/utils/config')
+const config = require('./config')
 const { mockURL } = config[env]
 
 module.exports = {

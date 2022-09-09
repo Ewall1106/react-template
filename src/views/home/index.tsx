@@ -1,36 +1,21 @@
-import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom'
-import { getUserInfo } from '@/api'
+import React, { useEffect } from 'react'
+import { observer } from 'mobx-react'
+import UserObserver from '@/model/user'
 
-import './index.less'
+import Info from '@/components/Info'
 
-export const Home = () => {
-  const navigate = useNavigate()
-  const [name, setName] = useState('')
+export const Home = observer(() => {
+  const info = UserObserver.getInfo()
 
   useEffect(() => {
-    getInfo()
+    UserObserver.requestInfo()
   }, [])
 
-  const getInfo = () => {
-    getUserInfo().then(res => {
-      const { username } = res.data
-      setName(username)
-    })
-  }
-
-  const onClick = () => {
-    navigate('/about', { replace: true })
-  }
   return (
     <div>
-      <h4>Home</h4>
-      <div>
-        route navigate: <button onClick={onClick}>Go About</button>
-      </div>
-      <div>api request: This is {name}</div>
+      <Info name={info.name} />
     </div>
   )
-}
+})
 
 export default Home

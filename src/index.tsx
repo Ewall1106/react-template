@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import Home from './views/home'
 import About from './views/about'
@@ -13,12 +13,12 @@ if (process.env.PROJECT_ENV === 'mock') {
 }
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
     <Routes>
+      <Route path="*" element={<Home />}></Route>
       <Route path="/" element={<Home />}></Route>
       <Route path="/about" element={<About />}></Route>
-      <Route path="*" element={<Home />}></Route>
     </Routes>
-  </HashRouter>,
+  </BrowserRouter>,
   document.getElementById('root')
 )

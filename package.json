@@ -1,13 +1,11 @@
 {
-  "name": "react-h5-template",
-  "version": "1.0.1",
-  "author": "DanielXiong<ewall1106@gmail.com>",
+  "name": "react-template",
+  "version": "1.0.0",
+  "author": "danielxiong<ewall1106@gmail.com>",
   "scripts": {
-    "dev": "cross-env PROJECT_ENV=local craco start",
     "mock": "cross-env PROJECT_ENV=mock craco start",
     "start": "cross-env PROJECT_ENV=development craco start",
-    "build": "cross-env PROJECT_ENV=production craco build",
-    "compress": "node ./compress.js"
+    "build": "cross-env PROJECT_ENV=production craco build"
   },
   "dependencies": {
     "ahooks": "^3.0.8",
