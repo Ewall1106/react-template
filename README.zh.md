@@ -20,6 +20,7 @@
 ```bash
 # clone
 $ git clone git@github.com:Ewall1106/react-template.git
+
 # install & run
 $ yarn & yarn start
 ```
