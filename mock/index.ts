@@ -2,7 +2,7 @@ import Mock from 'mockjs'
 
 import user from './user'
 
-const config = require('../src/utils/config')
+const config = require('../config')
 const baseURL = config[process.env.NODE_ENV].baseURL
 
 const mocks = [...user]
@@ -12,12 +12,12 @@ export function mockXHR() {
   for (const item of mocks) {
     Mock.mock(`${baseURL}${item.url}`, item.type, config => {
       const response = item.response(config)
-      console.info(`${item.url}:`, response)
+      console.info(`mock ${item.url}:`, response)
       return response
     })
 
     Mock.setup({
-      timeout: 500
+      timeout: 600
     })
   }
 }

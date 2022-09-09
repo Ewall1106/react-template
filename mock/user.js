@@ -6,23 +6,9 @@ export const userApi = [
       return {
         code: 200,
         status: true,
+        message: 'success',
         data: {
-          uid: '123456',
-          username: 'react-template'
-        },
-        message: 'success'
-      }
-    }
-  },
-
-  {
-    url: '/user/login',
-    type: 'post',
-    response: config => {
-      return {
-        code: 200,
-        entry: {
-          token: '123456'
+          name: 'react-template'
         }
       }
     }

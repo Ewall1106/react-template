@@ -1,6 +1,6 @@
 import axios, { AxiosInstance } from 'axios'
 
-const config = require('./config')
+const config = require('../../config')
 const baseURL = config[process.env.PROJECT_ENV].baseURL
 
 const service: AxiosInstance = axios.create({
@@ -10,9 +10,6 @@ const service: AxiosInstance = axios.create({
 
 service.interceptors.request.use(
   config => {
-    // if (store.state.user.token) {
-    //   config.headers.Authorization = `Bearer ${getToken()}`;
-    // }
     return config
   },
   error => {

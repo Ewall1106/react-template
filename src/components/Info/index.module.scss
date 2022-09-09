@@ -1,0 +1,14 @@
+.info {
+  padding: 10px;
+  .info__title {
+    font-size: 18;
+    font-weight: bolder;
+    color: #000;
+    margin-top: 8px;
+  }
+  &__desc {
+    font-size: 18;
+    color: #000;
+    margin-top: 8px;
+  }
+}

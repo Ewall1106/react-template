@@ -22,31 +22,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React App</title>
-  <script>
-    (function () {
-      function resetRemUnit() {
-        var UI_WIDTH = 375; // UI width
-        var docElement = window.document.documentElement;
-        var width = docElement.clientWidth || 375;
-        // SET htmlFontSize
-        var rate = width / (UI_WIDTH / 100);
-        docElement.style.fontSize = rate + 'px';
-        // Validate
-        var div = window.document.createElement('div');
-        div.style.width = '1rem';
-        div.style.display = "none";
-        window.document.getElementsByTagName('head')[0].appendChild(div);
-        var realRate = parseFloat(window.getComputedStyle(div, null).getPropertyValue('width'));
-        if (rate !== realRate) {
-          docElement.style.fontSize = rate * (rate / realRate) + 'px';
-        }
-      }
-      resetRemUnit();
-      window.addEventListener('resize', resetRemUnit);
-    })();
-
-  </script>
+  <title>react-template</title>
 </head>
 
 <body>
