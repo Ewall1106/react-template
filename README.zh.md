@@ -38,7 +38,13 @@ $ yarn & yarn start
 
 ## 其他
 
-- 如果要将此项目用做 `PC` 端基础模板的话，则只需删除移动端适配相关代码，即 `postcss-px-to-viewport` 插件相关配置内容即可。
+1. 如果要将此项目用做 `PC` 端基础模板的话，则只需删除移动端适配相关代码，即 `postcss-px-to-viewport` 插件相关配置内容即可。
+
+2. 其他相关模板推荐:
+
+   - [next-template](https://github.com/Ewall1106/next-template)
+   - [vue-h5-template](https://github.com/Ewall1106/vue-h5-template)
+   - [vue-next-template](https://github.com/Ewall1106/vue-next-template)
 
 ## 协议
 
