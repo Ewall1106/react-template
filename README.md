@@ -38,7 +38,13 @@ $ yarn & yarn start
 
 ## MEMO
 
-- If you want to use this project as the basic template on `PC`, then you only need to remove the content related to the mobile adaptation, that is, the configuration related to the `postcss-px-to-viewport` plugin.
+1. If you want to use this project as the basic template on `PC`, then you only need to remove the content related to the mobile adaptation, that is, the configuration related to the `postcss-px-to-viewport` plugin.
+
+2. Other relevant template recommend:
+
+   - [next-template](https://github.com/Ewall1106/next-template)
+   - [vue-h5-template](https://github.com/Ewall1106/vue-h5-template)
+   - [vue-next-template](https://github.com/Ewall1106/vue-next-template)
 
 ## LICENSE
 
