@@ -13,6 +13,8 @@
 
 `React-Template` provides the basic template required for h5 page development, and including some common solutions and extended functions on the basis of the official templates.
 
+Build components: https://bamboo-material.vercel.app
+
 More info: https://bamboo-docs.vercel.app
 
 ## USAGE
